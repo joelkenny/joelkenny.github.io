@@ -1,1 +1,155 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Joel Kenny</title>
+  
+  <style type="text/css">
+
+    body { 
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 12pt;
+      color: black;
+      background: #fff;
+
+      max-width:1534px;
+      margin: 0 auto;
+    }
+    a:link { 
+      color: rgb(0, 0, 153);
+      text-decoration: none;
+    }
+    a:visited { 
+      color: rgb(153, 0, 153);
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgb(0, 96, 255);
+      text-decoration: none;
+    }
+    a:active {
+      color: rgb(255, 0, 102);
+      text-decoration: none;
+    }
+    #header {
+      margin: 0px 2px 1px 2px;
+      background: #ddd;
+      overflow: hidden;
+      padding: 5px 10px 10px 10px;
+    }
+    #wrap {
+      overflow: hidden;
+    }
+    .box {
+      width: 20%;
+      padding-bottom: 20%;
+      position: relative;
+      float: left;
+    }
+    .innerContent {
+      position: absolute;
+      left: 2px;
+      right: 2px;
+      top: 2px;
+      bottom: 2px;
+      background: #ccc;
+    }
+    .tileText {
+      padding: 10px 10px 10px 10px;
+      position:absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      color: white;
+      background: rgba(0, 0, 0, 0.75);
+    }
+    @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+    }
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+      .box {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+    }
+  </style>
+
+  <!-- Enable media queries for old IE -->
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+</head>
+<body> 
+  <div id="header">
+    <h1>Joel Kenny</h1>
+    <p>Either I'm living the dream or dreaming that I live. This site is dedicated to my projects and ideas that I think are worth pouring into the crazy series of tubes we call the Internet.</p>
+    <p>If you want to read about my professional endeavors, check <a href="https://www.linkedin.com/profile/view?id=113065076" target="_blank">LinkedIn</a>. If you want to read code, check <a href="https://github.com/joelkenny" target="_blank">GitHub</a>. If you want to read at most 140 characters at a time, check <a href="https://twitter.com/joelkennysays" target="_blank">Twitter</a>. If you want to look at presentations, check <a href="http://slideshare.net/joelkenny1" target="_blank">SlideShare</a>.</p>
+    <p>If you'd like to get in touch, my email address is my first and last name, followed by gmail and all the usual stuff.</p>
+  </div>
+  <div id="wrap">
+    <div class="box">
+      <div class="innerContent">
+        <img src="turret_window_seat.png" width="100%" height="100%">
+        <div class="tileText">
+          Turret Window Seat<br>A unique piece of furniture
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <a href="https://play.google.com/store/apps/details?id=com.advancebeyond.plus" target="_blank">
+        <div class="innerContent">
+          <img src="charge_challenge.png" width="100%" height="100%">
+          <div class="tileText">
+            Charge Challenge<br>Physics-based game
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://play.google.com/store/apps/details?id=com.advancebeyond.sharemylocation" target="_blank">
+        <div class="innerContent">
+          <img src="sharemap.png" width="100%" height="100%">
+          <div class="tileText">
+            Sharemap<br>Simple location sharing
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <img src="mead.png" width="100%" height="100%">
+        <div class="tileText">
+          Mead<br>Drink of kings &amp; rogues
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent" style="padding: 15px 5px 5px 5px; background:#ddd; border:gray 5px solid; color:black">
+          Items are not necessarily in chronological order.<hr>
+          This site is hand-coded HTML and does not use any frameworks or rely on JavaScript (unless you have an old version of IE).
+      </div>
+    </div>
+  </div>
+</body>
+</html>
